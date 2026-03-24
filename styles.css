@@ -83,12 +83,12 @@ footer {
 }
 
 .grid-item:hover {
-  transform: scale(1);
+  transform: scale(0.9);
 }
 
 .grid-item img {
   width: 70%;  /* make the image less wide */
-  height: 500px; /* make it taller */
+  height: auto; 
   object-fit: cover;
   border-radius: 8px;
 }
