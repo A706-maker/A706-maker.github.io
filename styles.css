@@ -89,7 +89,7 @@ footer {
 }
 
 .grid-item img {
-  width: 70%;  /* less wide */
+  width: 90%;  /* less wide */
   height: auto; /* keeps full poportions */
   object-fit: contain; /* show full image no cropping */
   display: block;
