@@ -28,7 +28,7 @@ nav a:hover {
 .container {
   width: 90%;
   margin: auto;
-  padding; 30px, 0;
+  padding: 30px 0;
 }
 
 /* Headings*/
@@ -42,7 +42,7 @@ h1, h2, h3, h4 {
   padding: 20px;
   margin: 20px 0;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0,1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 /* Footer */
@@ -59,7 +59,7 @@ footer {
   height: 40vh; /* 40% of the screen height */
   object-fit: cover; /* makes the image crop nicely */
   display: block;
-  margin top: 20px;
+  margin-top: 20px;
 }
 
 .homepage-container {
@@ -231,7 +231,7 @@ footer {
 }
 
 .poll-button {
-  backgroud: #402b05
+  backgroud: #402b05;
   width: 50px;
   height: 35px;
   margin: center;
