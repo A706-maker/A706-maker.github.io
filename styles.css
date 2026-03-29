@@ -326,7 +326,7 @@ footer {
 }
 
 .content.active {
-    max-height: 2000px;  /* Increase this value to fit all your content */
+    max-height: 3000px;  /* Increase this value to fit all your content */
     padding: 12px;
     visibility: visible;
 }
