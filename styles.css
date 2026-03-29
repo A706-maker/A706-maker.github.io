@@ -313,6 +313,26 @@ footer {
   margin-bottom: 20px;  /* added spacing */
 }
 
+/* Collapsible content style */
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #f9f9f9;
+    padding: 0 12px;
+    margin-bottom: 15px;
+    border-radius: 0 0 4px 4px;
+}
+
+.content.active {
+    max-height: 1000px;  /* Increase this value to fit all your content */
+    padding: 12px;
+}
+
+.content p {
+    margin: 10px 0;
+}
+
 
   
   
