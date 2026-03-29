@@ -123,6 +123,292 @@
       <button class="collapsible">Affordable/Developing Areas In Sydney"</button>
       <div class="content">
         <iframe src="https://www.google.com/maps/d/embed?mid=1GdZG8THpCa1s2QF2PJ-k8CnMc1-aJxA&ehbc=2E312F" width="640" height="480"></iframe>
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Property Tables</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f6fa;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        color: #0d1b4c; /* Default dark blue text */
+    }
+
+    /* Container for responsive layout */
+    .table-container {
+        display: flex;
+        flex-wrap: wrap; /* Allows stacking on small screens */
+        gap: 20px;
+        justify-content: center;
+        max-width: 1700px;
+        width: 100%;
+    }
+
+    table {
+        border-collapse: collapse; /* Removes inner borders */
+        background: white;
+        border-radius: 10px;
+        border: 2px solid #1e3a8a; /* Blue border */
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        padding: 20px;
+        width: 100%;
+        max-width: 420px;
+        transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    /* Hover effect: glow + slight lift */
+    table:hover {
+        box-shadow: 0 0 15px rgba(30, 58, 138, 0.6);
+        border-color: #2563eb; /* Brighter blue on hover */
+        transform: translateY(-4px);
+    }
+
+    td {
+        padding: 8px 12px;
+        vertical-align: top;
+    }
+
+    .location {
+        font-size: 20px;
+        font-weight: bold;
+        color: #0d1b4c; /* Dark blue */
+    }
+
+    .subtext {
+        font-size: 14px;
+        color: #3a4a8f; /* Softer dark blue */
+    }
+
+    .growth {
+        color: #28a745; /* Green for growth */
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .label {
+        color: #0d1b4c; /* Dark blue */
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+    .price {
+        font-weight: bold;
+        color: #0d1b4c; /* Dark blue */
+    }
+
+    .note {
+        font-size: 14px;
+        color: #3a4a8f; /* Softer dark blue */
+        line-height: 1.4;
+    }
+
+    /* Responsive: stack tables on small screens */
+    @media (max-width: 768px) {
+        .table-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="table-container">
+
+    <!-- Marsden Park Table -->
+    <table>
+        <tr>
+            <td colspan="2">
+                <div class="location">Marsden Park</div>
+                <div class="subtext">NSW 2765 · North-West</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="growth">+5.8%</td>
+        </tr>
+        <tr>
+            <td class="label">House</td>
+            <td class="price">$890,000</td>
+        </tr>
+        <tr>
+            <td class="label">Unit</td>
+            <td class="price">$580,000</td>
+        </tr>
+        <tr>
+            <td class="label">Distance</td>
+            <td>48km from CBD</td>
+        </tr>
+        <tr>
+            <td class="label">Transport</td>
+            <td>Bus + future Metro</td>
+        </tr>
+        <tr>
+            <td class="label">Notes</td>
+            <td class="note">New housing estate, good infrastructure</td>
+        </tr>
+    </table>
+
+    <!-- Austral Table -->
+    <table>
+        <tr>
+            <td colspan="2">
+                <div class="location">Austral</div>
+                <div class="subtext">NSW 2179 · South-West</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="growth">+8.2%</td>
+        </tr>
+        <tr>
+            <td class="label">House</td>
+            <td class="price">$780,000</td>
+        </tr>
+        <tr>
+            <td class="label">Unit</td>
+            <td class="price">$490,000</td>
+        </tr>
+        <tr>
+            <td class="label">Distance</td>
+            <td>57km from CBD</td>
+        </tr>
+        <tr>
+            <td class="label">Transport</td>
+            <td>Bus (future rail planned)</td>
+        </tr>
+        <tr>
+            <td class="label">Notes</td>
+            <td class="note">Highest growth corridor, most affordable entry</td>
+        </tr>
+    </table>
+
+    <!-- Leppington Table -->
+    <table>
+        <tr>
+            <td colspan="2">
+                <div class="location">Leppington</div>
+                <div class="subtext">NSW 2179 · South-West</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="growth">+7.1%</td>
+        </tr>
+        <tr>
+            <td class="label">House</td>
+            <td class="price">$820,000</td>
+        </tr>
+        <tr>
+            <td class="label">Unit</td>
+            <td class="price">$520,000</td>
+        </tr>
+        <tr>
+            <td class="label">Distance</td>
+            <td>53km from CBD</td>
+        </tr>
+        <tr>
+            <td class="label">Transport</td>
+            <td>South-West Rail Link</td>
+        </tr>
+        <tr>
+            <td class="label">Notes</td>
+            <td class="note">Fast-growing corridor, strong rental demand</td>
+        </tr>
+    </table>
+
+    <!-- Campbelltown Table -->
+    <table>
+        <tr>
+            <td colspan="2">
+                <div class="location">Campbelltown</div>
+                <div class="subtext">NSW 2560 · South-West</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="growth">+4.8%</td>
+        </tr>
+        <tr>
+            <td class="label">House</td>
+            <td class="price">$720,000</td>
+        </tr>
+        <tr>
+            <td class="label">Unit</td>
+            <td class="price">$450,000</td>
+        </tr>
+        <tr>
+            <td class="label">Distance</td>
+            <td>+65 km from CBD</td>
+        </tr>
+        <tr>
+            <td class="label">Transport</td>
+            <td>Mail south Line</td>
+        </tr>
+        <tr>
+            <td class="label">Notes</td>
+            <td class="note">More affordable with direct train to CBD</td>
+        </tr>
+    </table>
+ <!-- Airds Table -->
+    <table>
+        <tr>
+            <td colspan="2">
+                <div class="location">Airds</div>
+                <div class="subtext">NSW 2560 · South-West</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="growth">+7%</td>
+        </tr>
+        <tr>
+            <td class="label">House</td>
+            <td class="price">$794,000</td>
+        </tr>
+        <tr>
+            <td class="label">Unit</td>
+            <td class="price">$562,000</td>
+        </tr>
+        <tr>
+            <td class="label">Distance</td>
+            <td>+56 km from CBD</td>
+        </tr>
+        <tr>
+            <td class="label">Transport</td>
+            <td>Bus and Mail south Line</td>
+        </tr>
+        <tr>
+            <td class="label">Notes</td>
+            <td class="note">fast growing Suburb, near Western Sydney airport</td>
+        </tr>
+    </table>
+ <!-- Riverstone -->
+    <table>
+        <tr>
+           <td colspan="2">
+           <div class="location">Riverstone</div>
+           <div class="subtext">NSW 2765 · North-West</div></td>
+      </tr>
+        <tr>
+        <td colspan="2" class="growth">+5.2%</td></tr>
+        <tr><td class="label">House</td><td class="price">$830,000</td></tr>
+        <tr><td class="label">Unit</td><td class="price">$540,000</td>
+ </tr>
+        <tr>
+            <td class="label">Distance</td>
+            <td>+50 km from CBD</td>
+        </tr>
+        <tr>
+            <td class="label">Transport</td>
+            <td>Richmond Line</td>
+        </tr>
+        <tr>
+            <td class="label">Notes</td>
+            <td class="note">More affordable with direct train to CBD</td>
+        </tr>
+    </table>
+
+
+
+
       </div>
   
 
