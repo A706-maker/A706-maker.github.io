@@ -322,11 +322,13 @@ footer {
     padding: 0 12px;
     margin-bottom: 15px;
     border-radius: 0 0 4px 4px;
+    visibility: hidden;
 }
 
 .content.active {
     max-height: 2000px;  /* Increase this value to fit all your content */
     padding: 12px;
+    visibility: visible;
 }
 
 .content p {
