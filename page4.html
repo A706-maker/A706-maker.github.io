@@ -51,7 +51,7 @@
 
     /* Collapsible content style */
     .content {
-        max-height: 0;
+        max-height: 500px;
         overflow: hidden;
         transition: max-height 0.3s ease-out;
         background-color: #f9f9f9;
@@ -125,5 +125,24 @@
     <footer>
        © 2026 Sydney Housing Watch Research Foundation. All rights reserved.
     </footer>
+
+      
+      <!-- JavaScript to make collapsible work -->
+    <script>
+        var collapsibles = document.getElementsByClassName("collapsible");
+        
+        for (var i = 0; i < collapsibles.length; i++) {
+            collapsibles[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                
+                if (content.classList.contains("active")) {
+                    content.classList.remove("active");
+                } else {
+                    content.classList.add("active");
+                }
+            });
+        }
+    </script>
   </body>
 </html>
