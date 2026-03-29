@@ -1,442 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Proposed Solutions</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="page1.html">Social consequences</a>
-      <a href="page2.html">Economic Consequences</a>
-      <a href="page3.html">Market Rates</a>
-      <a href="page4.html">Proposed Solutions</a>
-    </nav>
-
+<head>
     <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Key Proposed Solutions</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.5;
-        margin: 20px;
-    }
-
-    h2 {
-        margin-bottom: 15px;
-    }
-
-    /* Collapsible button style */
-    .collapsible {
-        background-color: #8498ad;
-        color: white;
-        cursor: pointer;
-        padding: 12px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 16px;
-        transition: background-color 0.3s ease;
-        margin-top: 10px;
-        margin-bottom: 8px; /* Space between buttons */
-        border-radius: 4px;
-    }
-
-    .collapsible:hover {
-        background-color: #5f6d7a;
-    }
-
-    /* Collapsible content style */
-    .content {
-        max-height: 0px;
-        overflow: hidden;
-        transition: max-height 0.3s ease-out;
-        background-color: #f9f9f9;
-        padding: 0 12px;
-        margin-bottom: 15px;
-        border-radius: 0 0 4px 4px;
-    }
-/* Show when active */
-    .content.active {
-        max-height: 1000px;
-        padding: 12px;
-    }
-    .content p {
-        margin: 10px 0;
-    }
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsive Property Tables</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f5f6fa;
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-        color: #0d1b4c; /* Default dark blue text */
-    }
-
-    /* Container for responsive layout */
-    .table-container {
-        display: flex;
-        flex-wrap: wrap; /* Allows stacking on small screens */
-        gap: 20px;
-        justify-content: center;
-        max-width: 1700px;
-        width: 100%;
-    }
-
-    table {
-        border-collapse: collapse; /* Removes inner borders */
-        background: white;
-        border-radius: 10px;
-        border: 2px solid #1e3a8a; /* Blue border */
-        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        padding: 20px;
-        width: 100%;
-        max-width: 420px;
-        transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
-    }
-
-    /* Hover effect: glow + slight lift */
-    table:hover {
-        box-shadow: 0 0 15px rgba(30, 58, 138, 0.6);
-        border-color: #2563eb; /* Brighter blue on hover */
-        transform: translateY(-4px);
-    }
-
-    td {
-        padding: 8px 12px;
-        vertical-align: top;
-    }
-
-    .location {
-        font-size: 20px;
-        font-weight: bold;
-        color: #0d1b4c; /* Dark blue */
-    }
-
-    .subtext {
-        font-size: 14px;
-        color: #3a4a8f; /* Softer dark blue */
-    }
-
-    .growth {
-        color: #28a745; /* Green for growth */
-        font-weight: bold;
-        font-size: 16px;
-    }
-
-    .label {
-        color: #0d1b4c; /* Dark blue */
-        font-weight: 500;
-        white-space: nowrap;
-    }
-
-    .price {
-        font-weight: bold;
-        color: #0d1b4c; /* Dark blue */
-    }
-
-    .note {
-        font-size: 14px;
-        color: #3a4a8f; /* Softer dark blue */
-        line-height: 1.4;
-    }
-
-    /* Responsive: stack tables on small screens */
-    @media (max-width: 768px) {
-        .table-container {
-            flex-direction: column;
-            align-items: center;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Information</title>
+    <style>
+        .collapsible {
+            background-color: #777;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
         }
-    }
-</style>
+        .active, .collapsible:hover {
+            background-color: #555;
+        }
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
+    <h1>Property Policies and Tables</h1>
 
-</style>
-</head>
-<body>
-
-    <div class="container">
-      <h1>What can actually fix this?</h1>
-    <div class="card">
-      <p> From federal policy reforms to affordable suburbs alternatives - here are the most discussed interventions to adress Sydney's housing affordability
-      crisis.</p>
+    <button class="collapsible">Help to Buy Scheme</button>
+    <div class="content">
+        <p>Help to Buy Scheme content goes here...</p>
     </div>
- </div>
 
-    <div class="container">
-      <h2>Key Proposed Solutions</h2>
-      <p>Click each policy to expand pros, cons, and expected impact. No single solution is sufficient — the consensus is that a combination of supply, demand, and tax reforms is needed.
-      </p>
+    <button class="collapsible">Negative Gearing</button>
+    <div class="content">
+        <p>Negative Gearing content goes here...</p>
+    </div>
 
-      <!-- Policy -->
-      <button class="collapsible">Help to Buy Scheme</button>
-      <div class="content">
-        <p>The "Help to Buy" scheme has been made to assist eligible middle to low earners to purchase a home through a contribution from the Australian Government of up to 40% of the purchase price for new homes and 30% for existing homes.
-        he eligible participants will be able to purchase property for up to $1.3 million in Sydney and regional centres, and up to $800,000 in the rest of NSW, only with the requirement that the home is the principal place of residence.
-        With about 1/3 available to buyers in NSW, there will be about 10,000 places allocated across the country.</p>
-      </div>
-      
-    <!-- Policy -->
-      <button class="collapsible">Negative Gearing</button>
-      <div class="content">
-        <p>Negative gearing occurs when the costs of out-owning an investment (such as interest, maintenance, and rates) exceed the income it generates. 
-          This creates a net loss, which investors are able to deduct from their other income (e.g. salary) so that they can pay less tax, acting as a long-term strategy for potential capital growth.
-          This method is not risk free though, as the investor must have enough cash to cover the shortfall, making it risky if interest rates suddenly rise or if the property is vacant. As tax laws are complex and subject to change, if pursuing this method it would be advised to seek independent financial advice.
-</p>
-      </div>
-    
+    <button class="collapsible">Social Housing</button>
+    <div class="content">
+        <p>Social Housing content goes here...</p>
+    </div>
 
-    <!-- Policy -->
-      <button class="collapsible">Social Housing</button>
-      <div class="content">
-        <p> Social housing is a source of secure and affordable housing for people with very-low to low incomes. It includes public properties that are managed/owned by Homes NSW, while community housing properties are managed or owned by not-for-profit Community Housing Providers (e.g. Evolve Housing).
-     To be eligible for social housing you must meet the following criteria:
-    <ul>
-<li>Be 18+</li>
-<li>Provide proof of idenity</li>
-<li>Australian citizen/permanent resident</li>
-<li>Repay any previous social housing debts</li>
-<li>Not own property or assets that meet your housing needs</li>
-<li>Have a household income within the eligibility limit</li>
-    </ul>
-</p>
-      </div>
-    
+    <button class="collapsible">Affordable/Developing Areas in Sydney</button>
+    <div class="content">
+        <p>Affordable/Developing Areas content goes here...</p>
+    </div>
 
-    <!-- Policy -->
-      <button class="collapsible">Affordable/Developing Areas In Sydney"</button>
-      <div class="content">
-        <iframe src="https://www.google.com/maps/d/embed?mid=1GdZG8THpCa1s2QF2PJ-k8CnMc1-aJxA&ehbc=2E312F" width="640" height="480"></iframe>
-        <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsive Property Tables</title>
-        
-<div class="table-container">
+    <h2>Property Tables</h2>
 
-    <!-- Marsden Park Table -->
+    <h3>Marsden Park</h3>
     <table>
-        <tr>
-            <td colspan="2">
-                <div class="location">Marsden Park</div>
-                <div class="subtext">NSW 2765 · North-West</div>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" class="growth">+5.8%</td>
-        </tr>
-        <tr>
-            <td class="label">House</td>
-            <td class="price">$890,000</td>
-        </tr>
-        <tr>
-            <td class="label">Unit</td>
-            <td class="price">$580,000</td>
-        </tr>
-        <tr>
-            <td class="label">Distance</td>
-            <td>48km from CBD</td>
-        </tr>
-        <tr>
-            <td class="label">Transport</td>
-            <td>Bus + future Metro</td>
-        </tr>
-        <tr>
-            <td class="label">Notes</td>
-            <td class="note">New housing estate, good infrastructure</td>
-        </tr>
+        <tr><th>Column 1</th><th>Column 2</th></tr>
+        <tr><td>Data 1</td><td>Data 2</td></tr>
     </table>
 
-    <!-- Austral Table -->
+    <h3>Austral</h3>
     <table>
-        <tr>
-            <td colspan="2">
-                <div class="location">Austral</div>
-                <div class="subtext">NSW 2179 · South-West</div>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" class="growth">+8.2%</td>
-        </tr>
-        <tr>
-            <td class="label">House</td>
-            <td class="price">$780,000</td>
-        </tr>
-        <tr>
-            <td class="label">Unit</td>
-            <td class="price">$490,000</td>
-        </tr>
-        <tr>
-            <td class="label">Distance</td>
-            <td>57km from CBD</td>
-        </tr>
-        <tr>
-            <td class="label">Transport</td>
-            <td>Bus (future rail planned)</td>
-        </tr>
-        <tr>
-            <td class="label">Notes</td>
-            <td class="note">Highest growth corridor, most affordable entry</td>
-        </tr>
+        <tr><th>Column 1</th><th>Column 2</th></tr>
+        <tr><td>Data 1</td><td>Data 2</td></tr>
     </table>
 
-    <!-- Leppington Table -->
+    <h3>Leppington</h3>
     <table>
-        <tr>
-            <td colspan="2">
-                <div class="location">Leppington</div>
-                <div class="subtext">NSW 2179 · South-West</div>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" class="growth">+7.1%</td>
-        </tr>
-        <tr>
-            <td class="label">House</td>
-            <td class="price">$820,000</td>
-        </tr>
-        <tr>
-            <td class="label">Unit</td>
-            <td class="price">$520,000</td>
-        </tr>
-        <tr>
-            <td class="label">Distance</td>
-            <td>53km from CBD</td>
-        </tr>
-        <tr>
-            <td class="label">Transport</td>
-            <td>South-West Rail Link</td>
-        </tr>
-        <tr>
-            <td class="label">Notes</td>
-            <td class="note">Fast-growing corridor, strong rental demand</td>
-        </tr>
+        <tr><th>Column 1</th><th>Column 2</th></tr>
+        <tr><td>Data 1</td><td>Data 2</td></tr>
     </table>
 
-    <!-- Campbelltown Table -->
+    <h3>Campbelltown</h3>
     <table>
-        <tr>
-            <td colspan="2">
-                <div class="location">Campbelltown</div>
-                <div class="subtext">NSW 2560 · South-West</div>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" class="growth">+4.8%</td>
-        </tr>
-        <tr>
-            <td class="label">House</td>
-            <td class="price">$720,000</td>
-        </tr>
-        <tr>
-            <td class="label">Unit</td>
-            <td class="price">$450,000</td>
-        </tr>
-        <tr>
-            <td class="label">Distance</td>
-            <td>+65 km from CBD</td>
-        </tr>
-        <tr>
-            <td class="label">Transport</td>
-            <td>Mail south Line</td>
-        </tr>
-        <tr>
-            <td class="label">Notes</td>
-            <td class="note">More affordable with direct train to CBD</td>
-        </tr>
+        <tr><th>Column 1</th><th>Column 2</th></tr>
+        <tr><td>Data 1</td><td>Data 2</td></tr>
     </table>
- <!-- Airds Table -->
-    <table>
-        <tr>
-            <td colspan="2">
-                <div class="location">Airds</div>
-                <div class="subtext">NSW 2560 · South-West</div>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" class="growth">+7%</td>
-        </tr>
-        <tr>
-            <td class="label">House</td>
-            <td class="price">$794,000</td>
-        </tr>
-        <tr>
-            <td class="label">Unit</td>
-            <td class="price">$562,000</td>
-        </tr>
-        <tr>
-            <td class="label">Distance</td>
-            <td>+56 km from CBD</td>
-        </tr>
-        <tr>
-            <td class="label">Transport</td>
-            <td>Bus and Mail south Line</td>
-        </tr>
-        <tr>
-            <td class="label">Notes</td>
-            <td class="note">fast growing Suburb, near Western Sydney airport</td>
-        </tr>
-    </table>
- <!-- Riverstone -->
-    <table>
-        <tr>
-           <td colspan="2">
-           <div class="location">Riverstone</div>
-           <div class="subtext">NSW 2765 · North-West</div></td>
-      </tr>
-        <tr>
-        <td colspan="2" class="growth">+5.2%</td></tr>
-        <tr><td class="label">House</td><td class="price">$830,000</td></tr>
-        <tr><td class="label">Unit</td><td class="price">$540,000</td>
- </tr>
-        <tr>
-            <td class="label">Distance</td>
-            <td>+50 km from CBD</td>
-        </tr>
-        <tr>
-            <td class="label">Transport</td>
-            <td>Richmond Line</td>
-        </tr>
-        <tr>
-            <td class="label">Notes</td>
-            <td class="note">More affordable with direct train to CBD</td>
-        </tr>
-    </tbody>
-    </table>
-</section>
-</main>
- </div>
-      
-  
 
-    <footer>
-       © 2026 Sydney Housing Watch Research Foundation. All rights reserved.
-    </footer>
+    <h3>Airds</h3>
+    <table>
+        <tr><th>Column 1</th><th>Column 2</th></tr>
+        <tr><td>Data 1</td><td>Data 2</td></tr>
+    </table>
 
-      
-      <!-- JavaScript to make collapsible work -->
+    <h3>Riverstone</h3>
+    <table>
+        <tr><th>Column 1</th><th>Column 2</th></tr>
+        <tr><td>Data 1</td><td>Data 2</td></tr>
+    </table>
+
     <script>
-        var collapsibles = document.getElementsByClassName("collapsible");
-        
-        for (var i = 0; i < collapsibles.length; i++) {
-            collapsibles[i].addEventListener("click", function() {
+        const coll = document.getElementsByClassName("collapsible");
+        for (let i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
                 this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                
-                if (content.classList.contains("active")) {
-                    content.classList.remove("active");
+                const content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
                 } else {
-                    content.classList.add("active");
+                    content.style.display = "block";
                 }
             });
         }
     </script>
-  </body>
+</body>
 </html>
