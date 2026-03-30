@@ -123,7 +123,7 @@ async function showResults() {
   resultScreen.classList.remove("hidden");
 
   document.getElementById("home-btn").onclick = () => {
-  window.location.href = "https://a706-maker.github.io/https-Sydneyhousingwatch.github.io/index.html"; 
+  window.location.href = "index.html"; 
 };
 
   const percentageScore = (score / questions.length) * 100;
