@@ -43,7 +43,9 @@ const progressContainer = document.getElementById("progress-container");
 const progressBar = document.getElementById("progress-bar");
 
 document.getElementById("start-btn").onclick = startQuiz;
-document.getElementById("retry-btn").onclick = restartQuiz;
+document.getElementById("retry-btn").onclick = () => {
+  restartQuiz;
+};
 document.getElementById("home-btn").onclick = () => {
   window.location.href = "index.html"; 
 };
@@ -122,8 +124,6 @@ async function showResults() {
   progressContainer.classList.add("hidden");
   resultScreen.classList.remove("hidden");
 
-  document.getElementById("home-btn").onclick = () => {
-  window.location.href = "index.html"; 
 };
 
   const percentageScore = (score / questions.length) * 100;
