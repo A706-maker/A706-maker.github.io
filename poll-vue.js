@@ -122,6 +122,10 @@ async function showResults() {
   progressContainer.classList.add("hidden");
   resultScreen.classList.remove("hidden");
 
+  document.getElementById("home-btn").onclick = () => {
+  window.location.href = "https://a706-maker.github.io/https-Sydneyhousingwatch.github.io/index.html"; 
+};
+
   const percentageScore = (score / questions.length) * 100;
   scoreText.textContent = `You scored ${score} out of ${questions.length}`;
 
